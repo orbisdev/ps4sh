@@ -8,5 +8,7 @@ Then install readline
 	brew install readline
 	
 Then proceed as usual
+
 	make
+	
 	make install
