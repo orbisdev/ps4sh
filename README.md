@@ -7,6 +7,8 @@ Then install readline
 
 	brew install readline
 	
+	brew link readline
+	
 Then proceed as usual
 
 	make
