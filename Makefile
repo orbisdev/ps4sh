@@ -3,10 +3,10 @@
   CC = gcc
 
 
-  CFLAGS = -std=gnu99 -Wall -pedantic -I/usr/include -I/usr/local/include -I/opt/local/include
+  CFLAGS = -std=gnu99 -Wall -pedantic -I/usr/local/opt/readline/include  -I/usr/include -I/usr/local/include -I/opt/local/include
 
   ifeq "x$(MSYSTEM)" "x"
-   LIBS = -L/opt/local/lib -lpthread -lreadline -lcurses -lncurses 
+   LIBS = -lreadline -L/usr/local/opt/readline/lib  -L/opt/local/lib -lpthread -lcurses -lncurses 
   #TODO WINDOWS SUPPORT
   else
    LIBS = -lwsock32 -lpthreadGC2 
