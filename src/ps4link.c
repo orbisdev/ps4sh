@@ -793,7 +793,7 @@ int ps4link_request_readdir(void *packet)
 	
 	size = (unsigned int)stats.st_size;
 	// Send the response.
-	return ps4link_response_readdir(1, dirent->d_namlen, type, mode, size, dirent->d_name, ctime, atime, mtime);
+	return ps4link_response_readdir(1, strlen(dirent->d_name), type, mode, size, dirent->d_name, ctime, atime, mtime);
 	
 	
 }
